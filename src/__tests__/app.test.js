@@ -1,9 +1,7 @@
 const { getCurrentMonth } = require("../app");
 const { isAdmin } = require("../app");
 
-jest
-  .useFakeTimers()
-  .setSystemTime(new Date('2020-01-01'));
+jest.useFakeTimers().setSystemTime(new Date("2020-01-01"));
 
 describe("app tests suites - getCurrentMonth", () => {
     test("should return the current month", () => {
